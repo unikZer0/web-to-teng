@@ -1,0 +1,238 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Saysettha OT';
+    color: #000;
+}
+
+/* Logo */
+.between {
+    /* border: 1px solid #000; */
+    margin-top: 10px;
+    display: flex;
+    justify-content:space-between;
+    height: 90px;
+    padding: 0 3rem;
+}
+/* .between .logo {
+    
+} */
+.between  .register {
+    /* border: 1px solid #000; */
+    padding: 0.5rem;
+}
+.between  .register a {
+    margin: 0.5rem 0rem 0.5rem 0.5rem;
+    text-decoration: none;
+}
+.between  .register a:hover{
+    color: #e36e59;
+}
+/* navbar */
+.below-navbar  {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    padding: 1rem 3rem;
+}
+.below-navbar ul {
+    display: flex; 
+    /* border: 1px solid #000;  */
+}
+.below-navbar ul li {
+    list-style: none;
+    /* border: 1px solid #000; */
+    margin-top: 20px;
+    padding:0px 10px;
+}
+.below-navbar ul li a {
+    text-decoration: none;
+}
+.below-navbar ul li .hover:hover{
+    text-decoration: none;
+    border: 1px solid #000;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    transition: 150ms;
+}
+ul li a:hover{
+    text-decoration: none;
+    border: 1px solid #000;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+}
+/* dropdown-menu */
+.dropdown {
+    position: relative;
+}
+.selector .hover {
+    width: 95px;
+    outline: none;
+    cursor: pointer;
+    border: none; 
+    /* border: 1px solid #000; */
+}
+.selector input::placeholder {
+    font-size: 16px;
+    color:#000;
+}
+.lists {
+    position: absolute;
+    /* border: 1px solid #000; */
+    background-color:#ffffff ;
+    top: 35px;
+    border-radius: 5px;
+    display: none;
+    overflow: hidden;
+}
+.lists .list {
+    padding: 5px 10px;
+}
+.lists .list:hover{
+    background-color: #dedede;
+}
+.show {
+    display: block;
+}
+.bi-chevron-down {
+    position: absolute;
+    right: 10px;
+    top: 1px;
+    /* border: 1px solid #000; */
+}
+.rotate {
+    transform: rotate(180deg);
+    transition: 150ms;
+}
+/* search */
+.con-search {
+    /* border: #000 1px solid; */
+    width: 40%;
+}
+.con-search .search{
+    /* border: 1px solid #000; */
+    padding: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+} 
+.con-search .search input:focus {
+    border: 1px solid red;
+}
+.con-search .search input {
+    width:100% ;
+    height: 45px;
+    border: 1px solid #000;
+    border-radius: 20px 0px 0px 20px;
+    padding-left: 20px;
+}
+.con-search .search input::placeholder {
+    font-size: 16px;
+}
+.con-icon {
+    border: 1px solid #000;
+    border-radius: 0px 20px 20px 0px;
+    cursor: pointer;
+    border-left: none;
+    padding: 0px 10px;
+}
+
+.bi-search {
+    font-size: 25px;
+    width: 20px;
+}
+.active:active {
+    transform: scale(1.2);
+}
+
+/* advert */
+.con-advert {
+    background-color: #3d0c86;
+    width: 100%;
+    height: 400px;
+    padding: 5px;
+    overflow: hidden;
+}
+.con-advert img {
+    width: 25%;
+    position: absolute;
+    bottom: 30px;
+}
+/* main-content */
+.con-trending {
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid #000; */
+    padding: 10px 50px;
+}
+.con-trending .trend a{
+    text-decoration: none;
+}
+.con-cont .main-cont  {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    height: 580px;
+    padding: 0 3rem;
+    gap: 20px;
+    /* border: 1px solid #000; */
+}
+/* book-content */
+.con-cont .main-cont .mybook {
+    border: 1px solid #000;
+}
+/* typenav book */
+/* margin */
+.margin {
+    margin: 0px 3rem;
+}
+.typenav ul {
+    display:flex ;
+    justify-content: space-between;
+    margin: 10px 3rem;
+    background-color: #dedede;
+    padding: 5px;
+}
+.typenav ul li{
+    list-style: none;
+}
+.typenav ul li a {
+    text-decoration: none;
+    /* border: 1px solid #000; */
+}
+.typenav ul li .adventure,.school {
+    text-decoration: none;
+    border: 2px solid #000;
+    border-top:none ;
+    border-left: none;
+    border-right: none;
+    /* border: 1px solid #000; */
+}
+/* manga-contet */
+.con-cont .main-cont .mymanga {
+    border: 1px solid #000;
+}
+.con-cont .main-cont .last {
+    width: 200%;
+}
+/* footer */
+.footer {
+    display: flex;
+    /* border: 1px solid #000; */
+}
+.footer .logo-footer {
+    width: 40%;
+    /* border: 1px solid #000; */
+    margin: 30px;
+    padding: 15px;
+    background-color: #ebebeb;
+}
+.footer .about-footer {
+    /* border: 1px solid #000; */
+    width: 60%;
+    padding: 15px;
+    margin: 30px;
+    background-color: #ebebeb;
+} 
